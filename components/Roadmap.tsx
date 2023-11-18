@@ -5,6 +5,7 @@ import { TiArrowUp } from "react-icons/ti";
 
 import Title from "./common/Title";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 interface CardProps {
 	date: String;
@@ -66,7 +67,14 @@ const Roadmap = () => {
 	const date = new Date().getFullYear();
 
 	return (
-		<div className="py-16">
+		<div className="py-16 relative">
+			<Image
+				src="/timeline-shape.svg"
+				width={500}
+				height={500}
+				alt="timeline shape"
+				className="absolute top-1/2 -translate-y-1/2 left-0 w-full h-full opacity-20"
+			/>
 			<div className="container mx-auto px-5 md:px-10">
 				<Title
 					title1="Roadmap"
