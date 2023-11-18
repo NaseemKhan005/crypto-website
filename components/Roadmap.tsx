@@ -16,6 +16,12 @@ interface CardProps {
 	percentage: String;
 	className?: String;
 	dotClasses?: String;
+	smallDot?: String;
+}
+
+interface DotProps {
+	dotClasses?: String;
+	smallDot?: String;
 }
 
 const Card = ({
@@ -27,6 +33,7 @@ const Card = ({
 	percentage,
 	className,
 	dotClasses,
+	smallDot,
 }: CardProps) => {
 	return (
 		<div
@@ -47,19 +54,27 @@ const Card = ({
 				<span className="text-[.5rem] font-semibold">{percentage}%</span>
 				<TiArrowUp className="text-green-500 -m-1 mb-[-1px] mr-0" />
 			</div>
-			<Dot dotClasses={dotClasses} />
+			<Dot dotClasses={dotClasses} smallDot={smallDot} />
 		</div>
 	);
 };
 
-const Dot = ({ dotClasses }: { dotClasses?: String }) => {
+const Dot = ({ dotClasses, smallDot }: DotProps) => {
 	return (
-		<span
-			className={cn(
-				"absolute top-1/2 -right-[3.2rem] md:-right-[4.6rem] -translate-y-1/2 hidden bg-[#F5F8FF] dark:bg-[#2e457b] w-5 h-5 rounded-full sm:block",
-				dotClasses
-			)}
-		/>
+		<>
+			<span
+				className={cn(
+					"absolute top-1/2 -right-[3rem] md:-right-[4.5rem] -translate-y-1/2 hidden bg-blue-500 w-4 h-4 rounded-full sm:block",
+					dotClasses
+				)}
+			/>
+			<span
+				className={cn(
+					"absolute top-1/2 -right-[2.75rem] md:-right-[4.3rem] -translate-y-1/2 hidden bg-[#F5F8FF] w-2 h-2 rounded-full sm:block",
+					smallDot
+				)}
+			/>
+		</>
 	);
 };
 
@@ -121,7 +136,8 @@ const Roadmap = () => {
 							name="Namecheap"
 							percentage="1.2"
 							className="before:-left-2"
-							dotClasses="top-[100%]"
+							dotClasses="-left-[3rem] md:-left-[4.5rem]"
+							smallDot="-left-[2.7rem] md:-left-[4.25rem]"
 						/>
 						<Card
 							date={`Mar 17,${date}`}
@@ -131,6 +147,8 @@ const Roadmap = () => {
 							name="Monero"
 							percentage="2.2"
 							className="before:-left-2"
+							dotClasses="-left-[3rem] md:-left-[4.5rem]"
+							smallDot="-left-[2.7rem] md:-left-[4.25rem]"
 						/>
 						<Card
 							date={`Jul 09,${date}`}
@@ -140,6 +158,8 @@ const Roadmap = () => {
 							iconColor="text-red-500"
 							percentage="9.2"
 							className="before:-left-2"
+							dotClasses="-left-[3rem] md:-left-[4.5rem]"
+							smallDot="-left-[2.7rem] md:-left-[4.25rem]"
 						/>
 					</div>
 				</div>

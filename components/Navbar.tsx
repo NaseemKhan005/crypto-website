@@ -30,7 +30,7 @@ const Navbar = () => {
 
 				<ul
 					className={cn(
-						"flex lg:items-center gap-7 lg:gap-10 capitalize font-[500] lg:relative fixed top-0 bg-[#dce7ff] dark:bg-[#111847] backdrop-blur-2xl lg:backdrop-blur-0 h-screen lg:w-fit lg:h-fit lg:bg-transparent dark:lg:bg-transparent z-[80] w-full sm:w-80 shadow-md flex-col lg:flex-row py-32 px-5 transition-all duration-500 lg:p-0 lg:shadow-none lg:left-0",
+						"flex lg:items-center gap-7 lg:gap-10 capitalize font-[500] lg:relative fixed top-0 bg-white dark:bg-[#111847] backdrop-blur-2xl lg:backdrop-blur-0 h-screen lg:w-fit lg:h-fit lg:bg-transparent dark:lg:bg-transparent z-[80] w-full sm:w-80 shadow-md flex-col lg:flex-row py-32 px-5 transition-all duration-500 lg:p-0 lg:shadow-none lg:left-0",
 						menu ? "left-0" : "-left-full"
 					)}
 				>
@@ -48,7 +48,7 @@ const Navbar = () => {
 						size="icon"
 						variant="outline"
 						onClick={() => setMenu(false)}
-						className="rounded-full text-2xl absolute top-8 right-5 lg:hidden"
+						className="rounded-full text-2xl absolute top-8 right-5 lg:hidden dark:bg-transparent hover:bg-white/10"
 					>
 						<IoClose />
 					</Button>
