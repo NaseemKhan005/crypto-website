@@ -1,9 +1,19 @@
+"use client";
+
+import { useTheme } from "next-themes";
 import Image from "next/image";
 
-const Images = ({ imgSrc }: { imgSrc: string }) => {
+interface SponserImageProps {
+	lightImg: string;
+	darkImg: string;
+}
+
+const SponserImage = ({ lightImg, darkImg }: SponserImageProps) => {
+	const { theme } = useTheme();
+
 	return (
 		<Image
-			src={imgSrc}
+			src={`${theme === "light" ? lightImg : darkImg}`}
 			alt="sponsers"
 			width={500}
 			height={500}
@@ -21,11 +31,26 @@ const Sponsers = () => {
 				</h2>
 
 				<div className="flex items-center lg:flex-nowrap flex-wrap justify-center lg:justify-between mt-5 md:mt-10 lg:mt-16 lg:px-16 lg:gap-0 gap-5">
-					<Images imgSrc="/sponsers/uideck.svg" />
-					<Images imgSrc="/sponsers/tailgrids.svg" />
-					<Images imgSrc="/sponsers/lineicons.svg" />
-					<Images imgSrc="/sponsers/ayroui.svg" />
-					<Images imgSrc="/sponsers/plainadmin.svg" />
+					<SponserImage
+						lightImg="/sponsers/uideck.svg"
+						darkImg="/sponsers/uideck-dark.svg"
+					/>
+					<SponserImage
+						lightImg="/sponsers/tailgrids.svg"
+						darkImg="/sponsers/tailgrids-dark.svg"
+					/>
+					<SponserImage
+						lightImg="/sponsers/lineicons.svg"
+						darkImg="/sponsers/lineicons-dark.svg"
+					/>
+					<SponserImage
+						lightImg="/sponsers/ayroui.svg"
+						darkImg="/sponsers/ayroui-dark.svg"
+					/>
+					<SponserImage
+						lightImg="/sponsers/plainadmin.svg"
+						darkImg="/sponsers/plainadmin-dark.svg"
+					/>
 				</div>
 			</div>
 		</div>

@@ -23,7 +23,7 @@ const Hero = () => {
 				className="absolute top-0 right-0 w-2/3 h-[130%] -z-20"
 			/>
 
-			<div className="container mx-auto px-5 md:px-10 flex flex-col items-center justify-center w-full h-screen relative text-center gap-3 sm:gap-5 md:gap-8 sm:pt-16 md:pt-28 lg:pt-32">
+			<div className="container mx-auto px-5 md:px-10 flex flex-col items-center justify-center w-full h-[90vh] md:h-screen relative text-center gap-3 sm:gap-5 md:gap-8 sm:pt-16 md:pt-28 lg:pt-32">
 				<h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold">
 					Tailwind CSS Template for <br /> Crypto, ICO and Web3
 				</h2>

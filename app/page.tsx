@@ -1,3 +1,4 @@
+import Features from "@/components/Features";
 import Hero from "@/components/Hero";
 import Sponsers from "@/components/Sponsers";
 
@@ -6,6 +7,7 @@ const HomePage = () => {
 		<div>
 			<Hero />
 			<Sponsers />
+			<Features />
 		</div>
 	);
 };
