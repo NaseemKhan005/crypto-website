@@ -5,6 +5,7 @@ import Sponsers from "@/components/Sponsers";
 import Team from "@/components/Team";
 import Testimonials from "@/components/Testimonials";
 import App from "@/components/App";
+import Faq from "@/components/Faq";
 
 const HomePage = () => {
 	return (
@@ -16,6 +17,7 @@ const HomePage = () => {
 			<Team />
 			<Testimonials />
 			<App />
+			<Faq />
 		</div>
 	);
 };

@@ -17,7 +17,7 @@ const Card = ({ imgSrc }: CardProps) => {
 				src="/team/testimonial-shape.svg"
 				width={500}
 				height={500}
-				alt="Testimonials member"
+				alt="shape"
 				className="w-full h-full absolute top-0 -right-20 opacity-30 dark:opacity-60"
 			/>
 			<div className="flex items-center gap-3 md:gap-5">
