@@ -5,6 +5,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/providers/ThemeProvider";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { cn } from "@/lib/utils";
 
 const poppins = Poppins({
 	subsets: ["latin"],
@@ -23,7 +24,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className={poppins.className}>
+			<body className={cn(poppins.className, "dark:bg-[#131535]")}>
 				<ThemeProvider
 					attribute="class"
 					defaultTheme="system"
