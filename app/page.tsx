@@ -7,6 +7,7 @@ import Testimonials from "@/components/Testimonials";
 import App from "@/components/App";
 import Faq from "@/components/Faq";
 import Contact from "@/components/Contact";
+import Newsletter from "@/components/Newsletter";
 
 const HomePage = () => {
 	return (
@@ -20,6 +21,7 @@ const HomePage = () => {
 			<App />
 			<Faq />
 			<Contact />
+			<Newsletter />
 		</div>
 	);
 };

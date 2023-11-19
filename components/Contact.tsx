@@ -63,7 +63,7 @@ const Contact = () => {
 				<div className="w-full">
 					<form
 						action="#"
-						className="sm:shadow-lg w-full xl:w-[85%] 2xl:w-[75%] dark:shadow-[#1c1d34] sm:p-7 sm:rounded-xl flex flex-col gap-5"
+						className="sm:shadow-lg w-full xl:w-[85%] 2xl:w-[75%] sm:p-7 sm:rounded-xl flex flex-col gap-5"
 					>
 						<h2 className="text-2xl sm:text-3xl font-semibold text-[#131B4D] dark:text-white">
 							Send us a Message
