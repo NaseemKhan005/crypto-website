@@ -47,32 +47,34 @@ const FaqCard = ({ question }: { question: String }) => {
 const Faq = () => {
 	return (
 		<div className="py-16 md:py-20 lg:py-28 my-10 md:my-16 relative bg-[#F5F8FF] dark:bg-[#131B4D]">
-			{/* <Image
+			<Image
 				src="/team/testimonial-shape.svg"
 				width={500}
 				height={500}
 				alt="shape"
-				className="w-full h-full absolute top-0 -right-96 opacity-30 dark:opacity-60 z-[1]"
+				className="w-full h-full absolute top-0 -right-96 opacity-30 dark:opacity-60 -z-20"
 			/>
 			<Image
 				src="/faq-shape.svg"
 				width={500}
 				height={500}
 				alt="shape"
-				className="w-full h-full absolute bottom-0 -left-[30rem] opacity-70"
-			/> */}
-			<div className="container mx-auto px-5 md:px-10 z-10">
-				<Title
-					title1="Faq"
-					title2="Frequently Asked Questions"
-					desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed congue arcu, In et dignissim quam condimentum vel."
-				/>
+				className="w-full h-full absolute bottom-0 -left-[30rem] opacity-70 -z-20"
+			/>
+			<div>
+				<div className="container mx-auto px-5 md:px-10 z-10">
+					<Title
+						title1="Faq"
+						title2="Frequently Asked Questions"
+						desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed congue arcu, In et dignissim quam condimentum vel."
+					/>
 
-				<div className="flex flex-col mt-10 md:mt-16 gap-5 md:gap-8">
-					<FaqCard question="How can I get benifits from it?" />
-					<FaqCard question="What is ICO Crypto?" />
-					<FaqCard question="How can i get the Token?" />
-					<FaqCard question="How can i purchase bitcoin?" />
+					<div className="flex flex-col mt-10 md:mt-16 gap-5 md:gap-8">
+						<FaqCard question="How can I get benifits from it?" />
+						<FaqCard question="What is ICO Crypto?" />
+						<FaqCard question="How can i get the Token?" />
+						<FaqCard question="How can i purchase bitcoin?" />
+					</div>
 				</div>
 			</div>
 		</div>
