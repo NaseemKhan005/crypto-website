@@ -6,6 +6,7 @@ import Team from "@/components/Team";
 import Testimonials from "@/components/Testimonials";
 import App from "@/components/App";
 import Faq from "@/components/Faq";
+import Contact from "@/components/Contact";
 
 const HomePage = () => {
 	return (
@@ -18,6 +19,7 @@ const HomePage = () => {
 			<Testimonials />
 			<App />
 			<Faq />
+			<Contact />
 		</div>
 	);
 };

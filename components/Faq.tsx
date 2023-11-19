@@ -47,7 +47,7 @@ const FaqCard = ({ question }: { question: String }) => {
 const Faq = () => {
 	return (
 		<div className="py-16 md:py-20 lg:py-28 my-10 md:my-16 relative bg-[#F5F8FF] dark:bg-[#131B4D]">
-			<Image
+			{/* <Image
 				src="/team/testimonial-shape.svg"
 				width={500}
 				height={500}
@@ -60,7 +60,7 @@ const Faq = () => {
 				height={500}
 				alt="shape"
 				className="w-full h-full absolute bottom-0 -left-[30rem] opacity-70 -z-20"
-			/>
+			/> */}
 			<div>
 				<div className="container mx-auto px-5 md:px-10 z-10">
 					<Title
