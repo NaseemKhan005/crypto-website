@@ -5,8 +5,8 @@ import { Input } from "./ui/input";
 
 const Newsletter = () => {
 	return (
-		<div className="py-5 sm:py-10 relative overflow-hidden before:absolute before:bg-[url('/newsletter-shape.svg')] before:bg-contain before:w-full before:h-full">
-			<div className="container mx-auto p-7 sm:p-10 md:p-12 xl:p-14 md:rounded-lg flex flex-col lg:flex-row items-center justify-between gap-5 xl:gap-20 bg-[#131B4D] text-white w-full md:max-w-4xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl">
+		<div className="py-5 sm:py-10 relative overflow-hidden">
+			<div className="container mx-auto p-7 sm:p-10 md:p-12 xl:p-14 md:rounded-lg flex flex-col lg:flex-row items-center justify-between gap-5 xl:gap-20 bg-[#131B4D] text-white w-full md:max-w-4xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl relative before:absolute before:bg-[url('/newsletter-shape.svg')] before:bg-cover before:w-[40%] before:h-full before:bg-no-repeat overflow-hidden before:right-0">
 				<div>
 					<h2 className="text-3xl sm:text-4xl mb-3 md:text-[2.5rem] font-semibold">
 						Newsletter
@@ -22,7 +22,7 @@ const Newsletter = () => {
 						name="email"
 						id="email"
 						required
-						className="py-7 sm:py-8 text-sm sm:text-base px-5 sm:px-7 rounded-full text-black pr-16 sm:pr-36"
+						className="py-7 dark:text-white sm:py-8 text-sm sm:text-base px-5 sm:px-7 rounded-full text-black pr-16 sm:pr-36"
 					/>
 					<Button
 						type="submit"

@@ -18,7 +18,7 @@ const Navbar = () => {
 	return (
 		<div className="w-full fixed top-0 left-0 z-10 bg-[#ffffffb8] dark:bg-[#111847e1] backdrop-blur-sm">
 			<div className="flex items-center justify-between container px-5 md:px-10 py-3 mx-auto z-10">
-				<Link href="#home">
+				<Link href="/">
 					<Image
 						src={cn(theme === "light" ? "/logo.svg" : "/logo-dark.svg")}
 						alt="logo"
@@ -52,17 +52,23 @@ const Navbar = () => {
 					>
 						<IoClose />
 					</Button>
-					<Button
-						variant="outline"
-						className="rounded-full bg-transparent hover:bg-blue-600 hover:text-white border border-blue-500 text-blue-500 px-7 py-6 text-[1rem] dark:text-white dark:border-white dark:hover:bg-white dark:hover:text-blue-500 flex lg:hidden"
+					<Link
+						href="https://naseemkhan.vercel.app/"
+						target="_blank"
+						className="block w-full h-full"
 					>
-						Sign In
-					</Button>
+						<Button
+							variant="outline"
+							className="rounded-full bg-transparent hover:bg-blue-600 hover:text-white border border-blue-500 text-blue-500 px-7 py-6 text-[1rem] dark:text-white dark:border-white w-full dark:hover:bg-white dark:hover:text-blue-500 flex lg:hidden"
+						>
+							Sign In
+						</Button>
+					</Link>
 				</ul>
 
 				<div className="flex items-center gap-1 sm:gap-3">
 					<ToggleTheme />
-					<Link href="/sign-in">
+					<Link href="https://naseemkhan.vercel.app/" target="_blank">
 						<Button
 							variant="outline"
 							className="rounded-full bg-transparent hover:bg-blue-600 hover:text-white border border-blue-500 text-blue-500 px-7 py-[1.3rem] dark:text-white dark:border-white dark:hover:bg-white dark:hover:text-blue-500 hidden sm:flex"
